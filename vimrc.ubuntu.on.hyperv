@@ -142,6 +142,9 @@ set t_vb=
 set guioptions-=T
 set guioptions-=m
 
+" Disable showmode for jedi; it is already with airline
+set noshowmode
+
 " Colorscheme
 colorscheme desert
 highlight Pmenu ctermbg=8
@@ -318,7 +321,7 @@ let g:flake8_show_in_file=0
 " Binding command keys
 let g:jedi#completions_command='<C-x><C-u>'
 let g:jedi#goto_command='<C-]>'
-let g:jedi#show_call_signatures='0'
+let g:jedi#show_call_signatures='2'
 
 " Ctrlp
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
