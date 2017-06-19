@@ -202,7 +202,7 @@ nnoremap <Leader>F :cp<CR>
 nnoremap <F2> a<C-R>=strftime("%c")<CR><Esc>""
 
 " Save and close buffer
-nnoremap <F12> <ESC>:vsp<CR>:bnext<CR><C-w>w:bdel<CR>
+nnoremap <F12> <ESC>:w<CR>:vsp<CR>:bprevious<CR><C-w>w:bdel<CR>
 
 " Insert a single character
 nnoremap s :exec "normal i".nr2char(getchar())."\e"<CR>
